@@ -24,3 +24,7 @@
 Route::get('/',function(){
 returnredirect('welcome');
 });
+
+Route::get('hello/{name}',function($name){
+return'Hello,'.$name;
+});
