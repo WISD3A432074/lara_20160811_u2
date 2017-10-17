@@ -24,7 +24,7 @@
 Route::get('/',function(){
 returnredirect('welcome');
 });
-
+/*
 Route::get('hello/{name}',function($name){
 return'Hello,'.$name;
 });
@@ -32,3 +32,8 @@ return'Hello,'.$name;
 Route::get('hello/{name?}',function($name='Everybody'){
   return'Hello,'.$name;
   });
+*/
+Route::get('hello/{name?}',['as'=>'hello.index',function($name=
+'Everybody'){
+return'Hello,'.$name;
+}]);
