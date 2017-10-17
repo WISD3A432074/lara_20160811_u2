@@ -16,6 +16,11 @@
 });
 */
 
-Route::get("/",function (){
+/*Route::get("/",function (){
      return 'welcome';
   });
+*/
+
+Route::get('/',function(){
+returnredirect('welcome');
+});
