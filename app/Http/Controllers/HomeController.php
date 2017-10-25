@@ -8,6 +8,6 @@
  {
          public function index()
      {
-         return'index';
+         return view('welcome');
      }
  }
