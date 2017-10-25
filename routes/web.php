@@ -20,7 +20,7 @@
      return 'welcome';
   });
 */
-
+/*
 Route::get('/',function(){
 returnredirect('welcome');
 });
@@ -44,9 +44,11 @@ Route::get('dashboard',function(){
 return'dashboard';
 }]);
 */
-
+/*
 Route::group(['prefix'=>'admin'],function(){
 Route::get('dashboard',function(){
 return'admindashboard';
 });
 });
+*/
+Route::get('/', ['as' => 'home.index', 'users' =>'HomeController@index']);
